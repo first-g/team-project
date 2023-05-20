@@ -25,7 +25,7 @@ function App() {
                   <Route path='fact' element={<QuoteFact />}/>
                 </Route>
                 <Route path='/pomodoro' element={<Pomodoro/>}></Route>
-                <Route path='/timer' element={<Timer/>}></Route>
+                <Route path='/timer' element={<Timer hours={1} minutes={45}/>}></Route>
                 <Route path='/clicker' element={<Clicker/>}></Route>
             </Routes>
           </div>
