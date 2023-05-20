@@ -6,7 +6,7 @@ import { data } from './data/data'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/team-project'>
 
         <Navigation />
 
