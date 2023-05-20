@@ -1,0 +1,105 @@
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+.about__context h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.context {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.context p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.context ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.context ul li {
+    font-size: 18px;
+}
+
+.context ul li span{
+    font-weight: bolder;
+}
+
+.about__authors{
+    text-align: center;
+}
+
+.about__authors h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about__authors ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about__authors ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tunuk,
+.erbol,
+.nuremir,
+.azimbek {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.tunuk {
+    background-color: orange;
+}
+.erbol {
+    background-color: green;
+}
+.nuremir {
+    background-color: red;
+}
+.azimbek {
+    background-color: teal;
+}
+
+@media (max-width: 700px) {
+    .about__context h1{
+        font-size: 25px;
+    }
+  
+    .context p {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    
+    .context ul {
+        gap: 15px;
+    }
+    
+    .context ul li {
+        font-size: 15px;
+    }
+    
+    .about__authors h1{
+        font-size: 25px;
+    }
+}
