@@ -11,7 +11,7 @@ export const data = [
         element: <About />
     },
     {
-        path: '/quotes',
+        path: '/quotes/*',
         name: 'Quotes',
         element: <Quotes />
     },

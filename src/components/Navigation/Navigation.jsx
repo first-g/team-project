@@ -12,7 +12,7 @@ const Navigation = () => {
                             <Link to='/' aria-current="page">О Проекте</Link>
                         </li>
                         <li>
-                            <Link to='/quotes'>Qoutes</Link>
+                            <Link to='/quotes'>Quotes</Link>
                         </li>
                         <li>
                             <Link to='/pomodoro'>Pomodoro</Link>

@@ -1,7 +1,14 @@
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { data } from './data/data'
+
+import About from './components/About/About'
+import Quotes from './components/Quotes/Quotes'
+import Pomodoro from './components/Pomodoro/Pomodoro'
+import Timer from './components/Timer/Timer'
+import Clicker from './components/Clicker/Clicker'
+
+import QuoteFact from './components/Quotes/QuoteFact';
 
 function App() {
   return (
@@ -13,9 +20,13 @@ function App() {
         <div className='app__content'>
           <div className='container'>
             <Routes>
-              {data.map(el => (
-                <Route key={el.name} path={el.path} element={el.element} />
-              ))}
+                <Route path='/' element={<About/>}></Route>
+                <Route path='/quotes/*' element={<Quotes/>}>
+                  <Route path='fact' element={<QuoteFact />}/>
+                </Route>
+                <Route path='/pomodoro' element={<Pomodoro/>}></Route>
+                <Route path='/timer' element={<Timer/>}></Route>
+                <Route path='/clicker' element={<Clicker/>}></Route>
             </Routes>
           </div>
         </div>
