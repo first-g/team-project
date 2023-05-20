@@ -9,7 +9,7 @@ const Navigation = () => {
                 <nav className="nav__body">
                     <ul>
                         <li>
-                            <Link to='/'>О Проекте</Link>
+                            <Link to='/' aria-current="page">О Проекте</Link>
                         </li>
                         <li>
                             <Link to='/quotes'>Qoutes</Link>
