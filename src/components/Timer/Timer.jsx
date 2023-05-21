@@ -32,15 +32,19 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
   });
 
   return (
-    <div>
-      <p>{`${h.toString().padStart(2, '0')}:${m
-        .toString()
-        .padStart(2, '0')}:${s.toString().padStart(2, '0')}`}</p>
-      <div>{over ? "Time's up!" : ''}</div>
-      <button onClick={() => setPaused(!paused)}>
-        {paused ? 'Resume' : 'Pause'}
-      </button>
-      <button onClick={() => reset()}>Restart</button>
+    <div className='timer'>
+      <div className="timer__main">
+        <p>{`${h.toString().padStart(2, '0')}:${m
+          .toString()
+          .padStart(2, '0')}:${s.toString().padStart(2, '0')}`}</p>
+        <div>{over ? "Time's up!" : ''}</div>
+        <div className="timer__buttons">
+          <button className='timer__pause' onClick={() => setPaused(!paused)}>
+            {paused ? 'Resume' : 'Pause'}
+          </button>
+          <button className='timer__restart' onClick={() => reset()}>Restart</button>
+        </div>
+      </div>
     </div>
   );
 };
