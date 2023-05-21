@@ -44,36 +44,6 @@
     margin-top: 20px;
 }
 
-.new-quote {
-    display: inline-block;	
-	box-sizing: border-box;
-	padding: 0 40px;
-	margin: 0 15px 15px 0;
-	outline: none;
-	border: none;  
-	border-radius: 4px;
-	height: 42px;
-	line-height: 32px;
-	font-size: 14px;
-	font-weight: 500;
-	text-decoration: none;
-	color: #fff;
-	background-color: #dd3737;
-	box-shadow: 0 2px #982727;
-	cursor: pointer;
-	user-select: none;
-	appearance: none;
-	touch-action: manipulation;  
-	vertical-align: top;
-}
-
-.new-quote:hover {
-	background-color: #ed0000;
-}
-.new-quote:active {
-	background-color: #9e2f2f;
-}
-
 .quotes__fact a {
     text-align: center;
     display: inline-block;
