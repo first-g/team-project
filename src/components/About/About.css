@@ -34,6 +34,10 @@
     font-weight: bolder;
 }
 
+.pomodoro {
+    text-decoration: line-through;
+}
+
 .about__authors{
     text-align: center;
 }
