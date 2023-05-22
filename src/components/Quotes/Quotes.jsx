@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Quotes.css'
 import { quotes } from '../../data/quotes'
 import { Link, Outlet } from 'react-router-dom';
+import { ReloadOutlined } from '@ant-design/icons'
 
 const Quotes = () => {
   const [quote, setQuote] = useState('"Be yourself; everyone else is already taken."');
@@ -29,7 +30,7 @@ const Quotes = () => {
           </p>
           <div className="person">{person}</div>
           <div className="quote__button">
-            <button onClick={newQuote} className="new-quote">New quote</button>
+            <button onClick={newQuote} className="new-quote"><ReloadOutlined /></button>
           </div>
         </div>
       </div>

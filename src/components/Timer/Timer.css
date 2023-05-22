@@ -26,4 +26,13 @@
     display: flex;
     justify-content: center;
     margin-left: 20px;
+    font-size: 30px;
+}
+
+.timer__pause {
+    font-size: 30px;
+}
+
+.timer__restart {
+    font-size: 30px;
 }

@@ -28,10 +28,10 @@ const About = () => {
       <div className="about__authors">
         <h1>Кто принял участие в создании проекта:</h1>
         <ul>
-          <li><div className="tunuk"/>Тунук</li>
-          <li><div className="nuremir"/>Нурэмир</li>
-          <li><div className="erbol"/>Эрбол</li>
-          <li><div className="azimbek"/>Азимбек</li>
+          <li><p className="tunuk"/>Тунук</li>
+          <li><p className="nuremir"/>Нурэмир</li>
+          <li style={{textDecoration: 'line-through'}}><p className="erbol"/>Эрбол</li>
+          <li><p className="azimbek"/>Азимбек</li>
         </ul>
       </div>
     </div>

@@ -44,6 +44,10 @@
     margin-top: 20px;
 }
 
+.new-quote {
+    font-size: 30px;
+}
+
 .quotes__fact a {
     text-align: center;
     display: inline-block;

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Timer.css'
+import { PauseCircleOutlined, StepForwardOutlined, ReloadOutlined } from '@ant-design/icons'
 
 const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
   const [paused, setPaused] = React.useState(false);
@@ -40,9 +41,9 @@ const Timer = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         <div>{over ? "Time's up!" : ''}</div>
         <div className="timer__buttons">
           <button className='timer__pause' onClick={() => setPaused(!paused)}>
-            {paused ? 'Resume' : 'Pause'}
+            {paused ? <StepForwardOutlined /> : <PauseCircleOutlined />}
           </button>
-          <button className='timer__restart' onClick={() => reset()}>Restart</button>
+          <button className='timer__restart' onClick={() => reset()}><ReloadOutlined /></button>
         </div>
       </div>
     </div>
