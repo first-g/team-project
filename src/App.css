@@ -30,16 +30,16 @@ button {
     font-weight: 500;
     text-decoration: none;
     color: #fff;
-    background-color: #dd3737;
-    box-shadow: 0 2px #982727;
+    background-color: #3785dd;
+    box-shadow: 0 2px #275498;
     cursor: pointer;
 }
 
 button:hover {
-	background-color: #ed0000;
+	background-color: #008eed;
 }
 button:active {
-	background-color: #9e2f2f;
+	background-color: #3266a9;
 }
 
 .app__content{
