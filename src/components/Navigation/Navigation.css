@@ -15,8 +15,20 @@
 }
 
 .nav__body ul li a{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.nav__body ul li a{
     font-size: 25px;
     color: white;
+}
+
+@media (max-width: 870px) {
+    .nav__body ul li a{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 700px) {
